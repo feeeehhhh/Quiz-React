@@ -1,0 +1,16 @@
+#perdeu{
+    text-align: center;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;margin-top: 100px;
+    
+}
+
+ h2,
+ p{
+    margin-bottom: 1rem;
+}
+
+p{
+    color: #8435de;
+}

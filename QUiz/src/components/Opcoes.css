@@ -1,0 +1,23 @@
+.opcoes{
+    background-color: rgba(87, 87, 87, 0.329);
+    border-radius: .6rem;
+    padding: .9rem;
+    margin-bottom:1rem;
+    cursor: pointer;
+   
+}
+.opcoes:hover{
+    background-color: rgb(108, 108, 225);
+    
+}
+
+.correta{
+    background-color: rgb(25, 234, 25);
+    font-weight: bold;
+}
+
+.errada{
+    background-color: red;
+    font-weight: bold;
+    opacity: .1;
+}
