@@ -1,24 +1,24 @@
-import React from "react";
-import { useContext } from "react";
-import { QuizContext } from "../context/quiz";
+import React, { useContext } from 'react'
 
-import Opcoes from "./Opcoes";
+import { QuizContext } from '../context/quiz'
 
-import "./Question.css";
+import Opcoes from './Opcoes'
+
+import './Question.css'
 
 const Question = () => {
   const onContinuar = (option) => {
     dispatch({
-      type: "CHECAR_OPCAO",
-      payload: {answer: currentQuestion.answer, option },
-    });
-  };
+      type: 'CHECAR_OPCAO',
+      payload: { answer: currentQuestion.answer, option },
+    })
+  }
 
-  const [quizState, dispatch] = useContext(QuizContext);
+  const [quizState, dispatch] = useContext(QuizContext)
 
-  const currentQuestion = quizState.questions[quizState.currentQuestion];
+  const currentQuestion = quizState.questions[quizState.currentQuestion]
 
-  console.log(quizState);
+  console.log(quizState)
   return (
     <div id="question">
       <p>
@@ -30,17 +30,18 @@ const Question = () => {
           <Opcoes
             option={option}
             key={option}
-            answer={currentQuestion.answer} selecionarOpcao={() => onContinuar(option)}
+            answer={currentQuestion.answer}
+            selecionarOpcao={() => onContinuar(option)}
           />
         ))}
       </div>
       {quizState.esconderContinuar && (
-        <button onClick={() => dispatch({ type: "CHANGE_QUESTION" })}>
+        <button onClick={() => dispatch({ type: 'CHANGE_QUESTION' })}>
           Continuar
         </button>
       )}
     </div>
-  );
-};
+  )
+}
 
-export default Question;
+export default Question
