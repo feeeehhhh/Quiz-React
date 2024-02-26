@@ -11,8 +11,8 @@ A aplicação consiste em um quiz sobre a linguagem javascript com cinco pergunt
 ![Web 2](https://github.com/feeeehhhh/Quiz-React/blob/master/assets/image2.png)
 
 ## Tecnologias
-- HTML / CSS / JS 
-- ReactJS
+- HTML5 / CSS3 / JS ES6
+- ReactJS version 18
 - Redux
 
 # Como executar o projeto
@@ -31,7 +31,7 @@ cd QUiz
 npm install
 
 # executar o projeto
-npm dev run
+npm run dev
 ```
 
 # Grupo DEV TEAM 09
