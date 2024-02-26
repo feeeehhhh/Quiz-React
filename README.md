@@ -14,11 +14,12 @@ A aplicação consiste em um quiz sobre a linguagem javascript com cinco pergunt
 - HTML5 / CSS3 / JS ES6
 - ReactJS version 18
 - Redux
+- Tailwind v3
 
 # Como executar o projeto
 
 ## Front end web
-Pré-requisitos: npm / yarn
+Pré-requisitos: npm / yarn 
 
 ```bash
 # Primeiro Clone o Repositório
